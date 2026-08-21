@@ -1,6 +1,6 @@
-package br.com.ecommerce.api.service;
+package br.com.eshop.api.service;
 
-import br.com.ecommerce.api.model.Category;
+import br.com.eshop.api.model.Category;
 
 import java.util.List;
 

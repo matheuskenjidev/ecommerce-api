@@ -1,14 +1,14 @@
-package br.com.ecommerce.api.controller;
+package br.com.eshop.api.controller;
 
-import br.com.ecommerce.api.model.Category;
-import br.com.ecommerce.api.service.CategoryService;
+import br.com.eshop.api.model.Category;
+import br.com.eshop.api.service.CategoryService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -25,7 +25,7 @@ public class CategoryController {
     }
 
     @PostMapping("/public/categories")
-    public ResponseEntity<String> createCategory(@RequestBody Category category) {
+    public ResponseEntity<String> createCategory(@Valid @RequestBody Category category) {
         categoryService.createCategory(category);
         return new ResponseEntity<>("categoria adicionada com sucesso", HttpStatus.CREATED);
     }

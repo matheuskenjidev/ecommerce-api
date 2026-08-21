@@ -1,6 +1,6 @@
-package br.com.ecommerce.api.repository;
+package br.com.eshop.api.repository;
 
-import br.com.ecommerce.api.model.Category;
+import br.com.eshop.api.model.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CategoryRepository extends JpaRepository<Category, Long> {

@@ -1,13 +1,11 @@
-package br.com.ecommerce.api;
+package br.com.eshop.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EcommerceApiApplication {
-
+public class EshopApiApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(EcommerceApiApplication.class, args);
+		SpringApplication.run(EshopApiApplication.class, args);
 	}
-
 }
